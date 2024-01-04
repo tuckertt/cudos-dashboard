@@ -1,14 +1,10 @@
-name: Build and Push Docker image to Docker Hub
-
-  #on: 
-  #  push:
-  #    branches: [ "cudos-master" ]
+name: Tagged Build and Push Docker image to Docker Hub 
 
 on:
   workflow_dispatch:
     inputs:
       tag:
-        description: 'New tag name'
+        description: 'New release tag name'
         required: true
 
 
