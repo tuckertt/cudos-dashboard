@@ -1,4 +1,4 @@
-name: Tagged Build and Push Docker image to Docker Hub 
+name: Version tagged Build and Push docker image to Docker Hub 
 
 on:
   workflow_dispatch:
