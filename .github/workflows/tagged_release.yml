@@ -28,3 +28,11 @@ jobs:
           context: .
           push: true
           tags: cudostest/dashboard:${{ github.event.inputs.tag }}
+
+      - name: Add tag to repo
+        uses: rickstaa/action-create-tag@v1
+        id: "tag_create"
+        with:
+          tag: "${{ github.event.inputs.tag }}"
+          tag_exists_error: false
+          message: "${{ github.event.inputs.tag }} release"
